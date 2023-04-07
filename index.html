@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstap.css">
+    <script src=""></script>
+</head>
+<body>
+    <div id="container">
+        ::before
+       <h2 id="h2" style="display: block;">Button styles</h2> 
+       <button id="hide" type="button" class="btn btn-primary">Hide</button>
+       <button id="show" type="button" class="btn btn-primary">Show</button>
+
+       <div> <!-- Bootstrap use here --></div>
+
+       <script>
+       var h2 = document.getElementById('h2')
+       var show = document.getElementById('show')
+       var hide = document.getElementById('hide')
+
+       hide.onclick = () => {
+        // h2.setAttribute('style','display: none') 
+        h2.setAttribute('style','background-color: green')
+       }
+       show.onclick = () => {
+        h2.setAttribute('style','display: block')
+       }
+       </script>
+    </div>
+</body>
+</html>

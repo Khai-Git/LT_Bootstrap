@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<!-- file css here -->">
+    <!-- script 1 -->
+    <script src="file or link source here"></script>
+    <!-- script 2 -->
+    <script src="file or link source here"></script>
+    <title></title>
+    <style>
+        /* Cách này không OK */
+        /* (CSS) Media-Querry : dạng thuần  (Sreach w3school để hiểu rõ hơn)*/
+        .col-xs-12 img{
+
+        }
+
+        /* @media olny screen and (min-width: 600px) {
+            body{
+                background-color: aqua;
+            }
+        } */
+
+        @media screen and (min-width: 480px) {
+            #leftsiddebar{
+                width: auto;
+                float: none;
+            }
+            main{margin-left: 21px;}
+            /* img{display: block;} */
+            /* img{display: none;} */
+            img {}
+        } 
+    </style>
+</head>
+<body>
+    <!-- Standard col = 12, row = could be any number -->
+    <!-- col-md-? -->
+    <!-- col-(laptop)-number col -->
+    <!-- col-sm-? -->
+    <!-- col-(tablet)-number col -->
+    <!-- col-xs-? -->
+    <!-- col-(phone)-number col -->
+
+    <div id="container">
+        <div class="row" style="display: flex;">
+            <!-- <div class="col-md-6">Col left</div>
+            <div class="col-md-6">Col right</div> -->
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                Col Left (Logo) <!-- Add <img> logo here -->
+            </div>
+            <div class="col-md-6 col-sm-6">Col Center</div>
+            <div class="col-md-3 col-sm-6">Col right</div>
+
+            <!-- Nếu như muốn hình ảnh biesn mất khi màn hình nhỏ -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
